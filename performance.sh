@@ -2,22 +2,17 @@
 
 echo "===== RyzenAdj AATU Imported Profile (Linux Version) ====="
 
-# PENTING: Sesuaikan path di bawah ini dengan lokasi ryzenadj kamu.
-# Jika ryzenadj sudah terinstall di sistem, biarkan saja "ryzenadj".
-# Jika file ada di folder yang sama dengan script ini, ubah jadi "./ryzenadj"
 RYZENADJ_PATH="ryzenadj"
 
 echo "Path: $RYZENADJ_PATH"
 echo "Running as Root..."
 echo ""
 
-# Cek apakah user menjalankan script sebagai root (wajib untuk ryzenadj)
 if [ "$EUID" -ne 0 ]
   then echo "ERROR: Harap jalankan script ini menggunakan sudo!"
   exit
 fi
 
-# Jalankan perintah
 $RYZENADJ_PATH \
 --tctl-temp=95 \
 --apu-skin-temp=95 \
