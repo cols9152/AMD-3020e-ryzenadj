@@ -24,3 +24,4 @@ set RYZENADJ="C:\Users\Administrator\Documents\ryzenadj-win64\ryzenadj.exe"
 echo.
 echo DONE! Profil AATU berhasil diterapkan.
 pause
+
